@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E404A"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Day 1 To 10"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="1" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="2" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#32BDCA"
+                    android:text="3" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#D3A0B6"
+                    android:text="4" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="5" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="6" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#53ED99"
+                    android:text="7" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="8" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#E4C4A1"
+                    android:text="9" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="10" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Day 11 To 20"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="11" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="12" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#32BDCA"
+                    android:text="13" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#D3A0B6"
+                    android:text="14" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="15" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="16" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#53ED99"
+                    android:text="17" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="18" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#E4C4A1"
+                    android:text="19" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="20" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Day 21 To 30"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="21" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="22" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#32BDCA"
+                    android:text="23" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#D3A0B6"
+                    android:text="24" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="25" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="26" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#53ED99"
+                    android:text="27" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="28" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#E4C4A1"
+                    android:text="29" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/textView"
+                    android:background="#51DCB4"
+                    android:text="30" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>
