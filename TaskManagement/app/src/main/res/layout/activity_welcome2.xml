@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <RelativeLayout
+        android:id="@+id/WelcomeBack"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#0583EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dp_20"
+            android:clickable="true"
+            app:navigationIcon="@drawable/toll" />
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:src="@drawable/group_36__2_" />
+
+        <TextView
+            android:id="@+id/tvHey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/image"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Hey Sofia"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHey"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/image"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Welcome Back"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/WelcomeBack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_30"
+                android:text="Today"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdMeeting"
+                style="@style/CardView."
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvToday">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgCircle"
+                        style="@style/ImageView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="35dp"
+                        android:src="@drawable/circle" />
+
+                    <TextView
+                        android:id="@+id/tvMeeting"
+                        style="@style/tvHeader"
+                        android:layout_toEndOf="@id/imgCircle"
+                        android:gravity="center_vertical"
+                        android:text="@string/meeting_with_omar" />
+
+                    <TextView
+                        style="@style/tvTime"
+                        android:layout_below="@id/tvMeeting"
+                        android:layout_toEndOf="@id/imgCircle"
+                        android:text="08:00 AM" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/vwLine"
+                    style="@style/view" />
+
+                <LinearLayout
+                    android:id="@+id/lyMeeting"
+                    style="@style/lyTodayUpdate">
+
+                    <TextView
+                        android:id="@+id/tvUpdate"
+                        style="@style/tvActivity"
+                        android:text="Update"
+                        app:drawableStartCompat="@drawable/ic_baseline_refresh_24" />
+
+                    <TextView
+                        android:id="@+id/tvDelete"
+                        style="@style/tvActivity"
+                        android:text="Delete"
+                        app:drawableStartCompat="@drawable/ic_baseline_delete_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="crdMeeting"
+                tools:layout_editor_absoluteY="731dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdGradle"
+                style="@style/CardView."
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crdMeeting">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgWGACircle"
+                        style="@style/ImageView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="35dp"
+                        android:src="@drawable/circle" />
+
+                    <TextView
+                        android:id="@+id/tvWGA"
+                        style="@style/tvHeader"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_toEndOf="@id/imgWGACircle"
+                        android:gravity="center_vertical"
+                        android:text="Webinar on Gradle API" />
+
+                    <TextView
+                        style="@style/tvTime"
+                        android:layout_below="@id/tvWGA"
+                        android:layout_toEndOf="@id/imgWGACircle"
+                        android:text="01:00 PM" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/vwLine2"
+                    style="@style/view" />
+
+                <LinearLayout
+                    android:id="@+id/lyGradle"
+                    style="@style/lyTodayUpdate">
+
+                    <TextView
+                        android:id="@+id/tvUpdate2"
+                        style="@style/tvActivity"
+                        android:text="Update"
+                        app:drawableStartCompat="@drawable/ic_baseline_refresh_24" />
+
+                    <TextView
+                        android:id="@+id/tvDelete2"
+                        style="@style/tvActivity"
+                        android:text="Delete"
+                        app:drawableStartCompat="@drawable/ic_baseline_delete_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="crdGradle"
+                tools:layout_editor_absoluteY="731dp" />
+
+
+            <TextView
+                android:id="@+id/tvTomorrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:text="Towmorrow"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crdGradle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdDevelopment"
+                style="@style/CardView."
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crdGradle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgFED"
+                        style="@style/ImageView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="35dp"
+                        android:src="@drawable/circle" />
+
+                    <TextView
+                        android:id="@+id/tvDevelopment"
+                        style="@style/tvHeader"
+                        android:layout_toEndOf="@id/imgFED"
+                        android:gravity="center_vertical"
+                        android:text="Front End Development" />
+
+                    <TextView
+                        style="@style/tvTime"
+                        android:layout_below="@id/tvDevelopment"
+                        android:layout_toEndOf="@id/imgFED"
+                        android:text="01:00 PM" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/vwLine3"
+                    style="@style/view" />
+
+                <LinearLayout
+                    android:id="@+id/lyDevelopment"
+                    style="@style/lyTodayUpdate">
+
+                    <TextView
+                        android:id="@+id/tvUpdate3"
+                        style="@style/tvActivity"
+                        android:text="Update"
+                        app:drawableStartCompat="@drawable/ic_baseline_refresh_24" />
+
+                    <TextView
+                        android:id="@+id/tvDelete3"
+                        style="@style/tvActivity"
+                        android:text="Delete"
+                        app:drawableStartCompat="@drawable/ic_baseline_delete_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="crdDevelopment"
+                tools:layout_editor_absoluteY="731dp" />
+
+            <TextView
+                android:id="@+id/tvDate14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:text="14th May 2021"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crdDevelopment" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdBackEndDevelop"
+                style="@style/CardView."
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crdDevelopment">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgBED"
+                        style="@style/ImageView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="35dp"
+                        android:src="@drawable/circle" />
+
+                    <TextView
+                        android:id="@+id/tvBackDevelop"
+                        style="@style/tvHeader"
+                        android:layout_toEndOf="@id/imgBED"
+                        android:gravity="center_vertical"
+                        android:text="Back End Development" />
+
+                    <TextView
+                        style="@style/tvTime"
+                        android:layout_below="@id/tvBackDevelop"
+                        android:layout_toEndOf="@id/imgBED"
+                        android:text="01:00 PM" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/vwLine4"
+                    style="@style/view" />
+
+                <LinearLayout
+                    android:id="@+id/lyBackDevelop"
+                    style="@style/lyTodayUpdate">
+
+                    <TextView
+                        android:id="@+id/tvUpdate4"
+                        style="@style/tvActivity"
+                        android:text="Update"
+                        app:drawableStartCompat="@drawable/ic_baseline_refresh_24" />
+
+                    <TextView
+                        android:id="@+id/tvDelete4"
+                        style="@style/tvActivity"
+                        android:text="Delete"
+                        app:drawableStartCompat="@drawable/ic_baseline_delete_24" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>
