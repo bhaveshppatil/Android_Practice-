@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:src="@drawable/happn_logo"
+        android:layout_margin="10dp"
+        android:layout_height="250dp" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/cantora_one"
+        android:padding="15dp"
+        android:text="Upload"
+        android:background="@drawable/btnshape"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="#1ADBF4" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/cantora_one"
+        android:padding="15dp"
+        android:text="Open gallery"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:background="@drawable/btnshape"
+        android:textStyle="bold"
+        app:backgroundTint="#1ADBF4" />
+
+
+</LinearLayout>
