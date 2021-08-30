@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/dashes"
+        android:hint="Enter Title"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etRequestType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/dashes"
+        android:hint="Enter Request type"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/dashes"
+        android:hint="Enter Email"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etPasswd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/dashes"
+        android:hint="Enter Password"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/dashes"
+        android:text="Post Data"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#1EBBEC" />
+
+
+</LinearLayout>
